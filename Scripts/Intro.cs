@@ -22,7 +22,7 @@ public class Intro : MonoBehaviour
 		AsyncOperation operation = SceneManager.LoadSceneAsync(1);
 		while (!operation.isDone)
 		{
-			float progressValue = Mathf.Clamp01(operation.progress / 0.6f);
+			float progressValue = Mathf.Clamp01(operation.progress / 0.2f);
 			yield return null;
 		}
 	}
